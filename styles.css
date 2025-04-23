@@ -72,3 +72,65 @@ a:focus {
 a:active {
     color: #d63447;
 }
+
+/* found this code from chat but messed around to my liking */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    flex: 1 1 45%; /* flexible items with 45% base size */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul li {
+        flex: 1 1 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.flex-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flex-list li {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1 1 100px;
+    text-align: center;
+}

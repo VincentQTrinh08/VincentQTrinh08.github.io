@@ -37,6 +37,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    align-items: stretch; 
 }
 
 
@@ -83,7 +84,7 @@ ul {
 }
 
 ul li {
-    flex: 1 1 45%; /* flexible items with 45% base size */
+    flex: 1 1 45%;
 }
 
 .container {
@@ -108,14 +109,6 @@ ul li {
     }
 }
 
-.flex-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-    margin-top: 10px;
-}
-
 .flex-list ul {
     list-style: none;
     padding: 0;
@@ -124,13 +117,15 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    color: white;
 }
 
 .flex-list li {
-    background-color: #f5f5f5;
+    background-color:#37d1f3;
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     flex: 1 1 100px;
     text-align: center;
+    color: white
 }

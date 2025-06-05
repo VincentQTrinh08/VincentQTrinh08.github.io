@@ -25,12 +25,18 @@ img {
     margin: auto;
 }
 
+/* Existing (centers all <section> by default) */
 section {
     padding: 15px;
     border: 5px solid rgb(33, 31, 31);
     display: block;
-    margin: auto;
-}
+    margin: auto;  /* centers globally */
+  }
+  
+  /* New: override only page2’s “left‐aligned” section */
+  section.left‐aligned {
+    margin: 15px 0;   /* top/bottom = 15px; left/right = 0 → flush‐left */
+  }  
 
 /* found the container from chatgpt */
 .container {
